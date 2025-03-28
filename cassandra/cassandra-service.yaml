@@ -4,6 +4,8 @@ metadata:
   labels:
     app: cassandra
   name: cassandra
+  annotations:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   clusterIP: None
   ports:
